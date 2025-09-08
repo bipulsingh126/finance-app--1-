@@ -89,34 +89,8 @@ applicationForm.addEventListener('submit', (e) => {
     applicationForm.reset();
 });
 
-// Loan Eligibility Form Validation
-const loanEligibilityForm = document.getElementById("loanEligibilityForm");
-const eligibilityError = document.getElementById("eligibility-error");
-
-loanEligibilityForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  let isValid = true;
-  eligibilityError.style.display = "none";
-
-  loanEligibilityForm.querySelectorAll("input, select").forEach((field) => {
-    if (!field.value.trim()) {
-      field.style.borderColor = "red";
-      isValid = false;
-    } else {
-      field.style.borderColor = "#ddd";
-    }
-  });
-
-  if (!isValid) {
-    eligibilityError.textContent = "One or more fields have an error. Please check and try again.";
-    eligibilityError.style.display = "block";
-    return;
-  }
-
-  alert("✅ Your eligibility details have been submitted successfully!");
-  loanEligibilityForm.reset();
-});
+// Note: Loan eligibility form now uses Zoho iframe - no client-side validation needed
+// The iframe handles all form functionality
 
 // Contact Form Submission
 const contactForm = document.querySelector('.contact-form');
