@@ -86,8 +86,8 @@ section {
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   color: white;
-
-  top: 0;
+  
+  top: 20px;
   z-index: 1000;
 }
 
@@ -95,7 +95,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 0;
+  min-height: 70px;
 }
 
 .logo {
@@ -103,8 +104,8 @@ header {
   align-items: center;
   height: 80px;
   width: 200px;
-  margin-top: 30px;
-  margin-right: 20px;
+  margin-top: 40px;
+  margin-right: 30px;
   transition: transform 0.3s ease;
 }
 
@@ -129,16 +130,30 @@ header {
 }
 
 .nav-menu li {
-  margin-left: 25px;
+  margin: 0;
 }
 
 .nav-menu a {
+  display: block;
+  padding: 12px 25px;
   font-weight: 500;
-  transition: color 0.3s ease;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
 }
 
 .nav-menu a:hover {
-  color: var(--secondary-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: var(--secondary-color);
+}
+
+.nav-menu a.active {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-bottom-color: var(--secondary-color);
 }
 
 .mobile-menu-btn {
@@ -413,36 +428,55 @@ header {
 }
 
 @media (max-width: 768px) {
-    .header-container{
-        padding: 1rem ;
-    
-    }
+  .header-container {
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 150px;
+  }
+  
   .nav-menu {
     position: fixed;
-    top: 0; /* start from top */
-    left: -100%; /* hidden off-screen initially */
+    top: 0;
+    left: -100%;
     width: 100%;
-    height: 100vh; /* full screen */
-    background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black */
+    height: 100vh;
+    background-color: #2c2c2c;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: left 0.3s ease;
-    color: white;
-    z-index: 9999; /* appear above everything */
+    z-index: 9999;
   }
 
   .nav-menu.active {
-    left: 0; /* slide in */
+    left: 0;
   }
 
   .nav-menu li {
-    margin: 20px 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-menu a {
+    padding: 20px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: none;
+    width: 100%;
+  }
+  
+  .nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: transparent;
   }
 
   .mobile-menu-btn {
     display: flex;
-    z-index: 10000; /* above menu */
+    z-index: 10000;
   }
 }
 
