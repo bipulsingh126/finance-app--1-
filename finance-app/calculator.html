@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>capitalassistindia - Fast Online Personal Loans</title>
+    <meta
+      name="description"
+      content="capitalassistindia - Apply online for personal loans with lowest interest rates, fast approval, and minimal documentation"
+    />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./css/calculator.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./assets/finallogo.png" alt="logo" style="height:100%; width:100%">
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="loan-services.html">Loan Services</a></li>
+        <li><a href="calculator.html" class="active">Calculator</a></li>
+        <li><a href="apply.html">Apply Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-top-left">
+      <h1>Personal Loan EMI Calculator</h1>
+      <p>Plan your repayments easily with our simple EMI calculator tool.</p>
+    </div>
+  </section>
+
+  <!-- Calculator Info -->
+  <section class="calculator-content">
+    <div class="container">
+      <h2>What is a Personal Loan EMI Calculator?</h2>
+      <p>
+        An EMI Calculator helps you find out the exact monthly installment you need to pay on your loan. Just enter your Loan Amount, Interest Rate, and Loan Tenure — the calculator will instantly show your EMI and total interest payable.
+      </p>
+
+      <h2>How to Use?</h2>
+      <ol>
+        <li><strong>Loan Amount:</strong> Enter or adjust the amount you wish to borrow.</li>
+        <li><strong>Loan Tenure:</strong> Select the repayment period in months or years.</li>
+        <li><strong>Interest Rate:</strong> Enter the applicable rate of interest.</li>
+        <li>The calculator will automatically display your monthly EMI and overall interest.</li>
+      </ol>
+
+      <h2>Why Use Our EMI Calculator?</h2>
+      <ul>
+        <li>✔ Quick and accurate results</li>
+        <li>✔ Helps you know your EMI in advance</li>
+        <li>✔ Choose the right tenure for your budget</li>
+        <li>✔ Better planning for monthly expenses</li>
+      </ul>
+
+      <!-- Interactive Calculator -->
+       <!-- Loan Calculator -->
+    <section id="calculator" class="calculator">
+      <div class="container">
+        <h2 class="section-title">Loan EMI Calculator</h2>
+        <p class="section-subtitle">
+          Plan your repayments with our easy-to-use calculator
+        </p>
+
+        <div class="calculator-container">
+          <div class="calculator-form">
+            <div class="form-group">
+              <label for="loan-amount">Loan Amount (₹)</label>
+              <input
+                type="range"
+                id="loan-amount"
+                min="50000"
+                max="5000000"
+                step="50000"
+                value="1000000"
+              />
+              <output for="loan-amount" id="loan-amount-output"
+                >10,00,000</output
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="interest-rate">Interest Rate (% per annum)</label>
+              <input
+                type="range"
+                id="interest-rate"
+                min="5"
+                max="20"
+                step="0.1"
+                value="9.5"
+              />
+              <output for="interest-rate" id="interest-rate-output"
+                >9.5%</output
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="loan-tenure">Loan Tenure (months)</label>
+              <input
+                type="range"
+                id="loan-tenure"
+                min="12"
+                max="84"
+                step="12"
+                value="60"
+              />
+              <output for="loan-tenure" id="loan-tenure-output"
+                >60 months</output
+              >
+            </div>
+          </div>
+
+          <div class="calculator-result">
+            <h3>Your EMI Details</h3>
+            <div class="result-item">
+              <p>Monthly EMI</p>
+              <p class="result-value" id="emi-value">₹21,000</p>
+            </div>
+
+            <div class="result-item">
+              <p>Total Interest Payable</p>
+              <p class="result-value" id="total-interest">₹2,60,000</p>
+            </div>
+
+            <div class="result-item">
+              <p>Total Payment</p>
+              <p class="result-value" id="total-payment">₹12,60,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-col">
+        <h3>Cash Firm India</h3>
+        <p>Welcome to Cash Firm India. We provide loans at very reasonable interest rates with minimal documentation.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="loan-services.html">Loan Services</a></li>
+          <li><a href="calculator.html">EMI Calculator</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>Rajapur, Pocket 24/3, Sector 9, Rohini, Delhi, 110085</p>
+        <p>Email: info@cashfirmindia.com</p>
+        <p>Phone: +91 9876543210</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Cash Firm India | Powered by Cash Firm India Solutions</p>
+    </div>
+  </footer>
+
+  <script src="./index.js">
+   
+  </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>capitalassistindia - Fast Online Personal Loans</title>
+    <meta
+      name="description"
+      content="capitalassistindia - Apply online for personal loans with lowest interest rates, fast approval, and minimal documentation"
+    />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="./css/apply.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./assets/finallogo.png" alt="logo" style="height:100%; width:100%">
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="loan-services.html">Loan Services</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="apply.html" class="active">Apply Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Apply Hero -->
+  <section class="hero">
+    <div class="hero-top-left">
+      <h1>Apply for Your Loan</h1>
+      <p>Get quick approval and flexible repayment options with minimal documentation.</p>
+    </div>
+  </section>
+
+  <!-- Loan Info -->
+  <section class="loan-info">
+    <div class="container">
+      <h2>Loan Details</h2>
+      <ul>
+        <li>Maximum Loan Amount: ₹15,00,000</li>
+        <li>Interest Rates: 9.75% to 24% per annum, depending on your profile</li>
+        <li>Repayment Tenure: 12 to 60 months</li>
+        <li>Processing Fees: 1.5% – 2.5% of the loan amount</li>
+      </ul>
+
+      <h3>Example Calculation</h3>
+      <p>
+        For a loan of ₹1,00,000 at 13% per annum for 12 months: 
+      </p>
+      <ul>
+        <li>Processing Fee: ₹2,360 (including GST)</li>
+        <li>Line Setup Fee: ₹588</li>
+        <li>Total Interest: ₹7,181</li>
+        <li>Total Payable: ₹1,10,129</li>
+        <li>EMI: ₹8,932</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Loan Application Form -->
+  <section class="loan-application">
+    <div class="container">
+      <h2>Complete Your Application</h2>
+      <form id="loanForm" action="#" method="POST">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Mobile Number</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div class="form-group">
+          <label for="loanAmount">Loan Amount (₹)</label>
+          <input type="number" id="loanAmount" name="loanAmount" min="10000" max="1500000" required />
+        </div>
+
+        <div class="form-group">
+          <label for="tenure">Repayment Tenure (Months)</label>
+          <select id="tenure" name="tenure" required>
+            <option value="12">12</option>
+            <option value="24">24</option>
+            <option value="36">36</option>
+            <option value="48">48</option>
+            <option value="60">60</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="income">Monthly Income (₹)</label>
+          <input type="number" id="income" name="income" required />
+        </div>
+
+        <div class="form-group">
+          <label for="address">Residential Address</label>
+          <textarea id="address" name="address" rows="3" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit Application</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>capitalassistindia</h3>
+          <p>
+            Fast loans with transparent terms and minimal documentation.
+          </p>
+          <p>
+            Address: Rajapur, Pocket 24/3, Sector 9, Rohini, Delhi, 110085
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+           <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="apply.html">Apply Now</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 capitalassistindia | Powered by capitalassistindia Solutions
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.calculator-content {
+  padding: 60px 20px;
+  background: white;
+}
+
+.calculator-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.calculator-content p,
+.calculator-content ol,
+.calculator-content ul {
+  margin-bottom: 20px;
+}
+
+.calculator-content ol li,
+.calculator-content ul li {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
